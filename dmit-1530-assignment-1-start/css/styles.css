@@ -71,11 +71,14 @@ figcaption {
 
 /* ============= Header ============= */
 
-/* Nav*/
+/* Nav */
 ul {
     list-style: none;
     display: flex;
     padding: 0;
+    width: 20rem;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .header {
@@ -93,7 +96,6 @@ ul {
 
 .header li:nth-child(2) {
     margin: 0 2rem;
-
 }
 
 /* Logo header*/
@@ -102,7 +104,6 @@ ul {
     width: 18.75rem;
     display: flex;
     align-items: baseline;
-    flex-wrap: wrap;
 }
 
 .logo h1 {
@@ -467,6 +468,23 @@ footer {
 
 /* First Layout change */
 @media screen and (min-width: 840px) {
+    /* Header */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header nav ul {
+        align-items: flex-end;
+    }
 
     /* Home */
     .flex {
@@ -650,7 +668,8 @@ footer {
 /* MAX width Layout */
 @media screen and (min-width: 1440px) {
     .section-container,
-    .gallery-container-inner {
+    .gallery-container-inner,
+    .header {
         margin: 0 auto;
         max-width: 90rem;
     }
