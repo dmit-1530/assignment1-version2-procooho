@@ -129,6 +129,30 @@ section:nth-child(1) img {
     padding-bottom: 4rem;
 }
 
+/* Section 1 */
+section:nth-child(2) span {
+    font-size: 2.5rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+section:nth-child(2) h2 {
+    margin-bottom: 2rem;
+}
+
+section:nth-child(2) h3 {
+    font-size: 1.25rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+section:nth-child(2) p {
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    margin-bottom: 4rem;
+}
+
 /* ============= Footer ============= */
 
 footer {
