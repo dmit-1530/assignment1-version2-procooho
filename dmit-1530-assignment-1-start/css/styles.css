@@ -3,15 +3,83 @@
     --blue-grey-100: #CFD8DC;
     --blue-grey-200: #B0BEC5;
     --blue-grey-900: #263238;
+    --header-footer: #111111;
+    --white-font: #FFFFFF;
 }
 
 body {
     color: #000;
-    text-align: center; 
+    text-align: center;
 }
 
-header, footer {
+header,
+footer {
     background-color: var(--blue-grey-50);
     color: #fff;
-    padding: 2rem 4rem;   
+    padding: 2rem 4rem;
+}
+
+/* Global */
+
+header,
+footer {
+    background-color: var(--header-footer)
+}
+
+/* Logo header*/
+.logo {
+    width: 18.75rem;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    font-size: 3.5rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    color: var(--white-font);
+}
+
+.logo a:nth-child(1) {
+    text-decoration: none;
+    width: 13rem;
+}
+
+.logo a:nth-child(2) {
+    width: 5.75rem;
+}
+
+/* Logo footer*/
+
+.logo-footer {
+    width: 20.62rem;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.logo-footer h1 {
+    font-size: 3.5rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    color: var(--white-font);
+}
+
+.logo-footer a:nth-child(1) {
+    text-decoration: none;
+    width: 13rem;
+}
+
+.logo-footer a:nth-child(2) {
+    width: 7.62rem;
+}
+
+.logo-footer p {
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    width: 90%;
+    color: var(--blue-grey-200);
+    margin: -0.5rem 0 0 0.3rem;
+    text-align: left;
 }
