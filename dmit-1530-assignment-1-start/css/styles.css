@@ -71,6 +71,7 @@ p {
 ul {
     list-style: none;
     display: flex;
+    padding: 0;
 }
 
 .header {
@@ -115,13 +116,12 @@ ul {
     width: 5.75rem;
 }
 
-/* ============= Main ============= */
-
-/* Section 1 */
+/* ============= Main(Home) ============= */
 section {
     padding: 4rem 2rem 0 2rem;
 }
 
+/* Section 1 */
 section:nth-child(1) {
     background-color: var(--blue-grey-50);
 }
@@ -274,6 +274,30 @@ section:nth-child(5) a {
     justify-content: center;
 }
 
+/* ============= Main(Gallery) ============= */
+.gallery-container h3 {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.gallery-container section:nth-child(1) img {
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.gallery-container section:nth-child(1) figure img {
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.gallery-container section:nth-child(1) figcaption {
+    text-align: left;
+    margin-bottom: 2.5rem;
+}
+
+
 
 /* ============= Footer ============= */
 
@@ -381,6 +405,20 @@ footer {
         width: calc((100% / 2) - (1.5rem / 2));
     }
 
+    section:nth-child(2) .section-container .star,
+    section:nth-child(2) .section-container h3,
+    section:nth-child(2) .section-container p {
+        display: block;
+        text-align: left;
+    }
+
+    section:nth-child(2) .section-container>.star:first-of-type,
+    section:nth-child(2) .section-container>h2,
+    section:nth-child(2) .section-container>p {
+        display: block;
+        text-align: center;
+    }
+
     section:nth-child(4) .flex div,
     section:nth-child(4) .flex img {
         width: calc((100% / 2) - (1.5rem / 2));
@@ -406,8 +444,8 @@ footer {
 
     .logo-footer {
         margin: 0 auto;
-        margin-top: 1.5rem;   
-        margin-left: 5rem;     
+        margin-top: 1.5rem;
+        margin-left: 5rem;
     }
 }
 
@@ -423,7 +461,7 @@ footer {
         width: calc((100% / 3) - (3rem / 3));
     }
 
-    section:nth-child(4) .section-container{
+    section:nth-child(4) .section-container {
         display: flex;
         flex-wrap: wrap;
         gap: 1.5rem;
@@ -453,7 +491,7 @@ footer {
 }
 
 /* MAX width Layout */
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) {
     .section-container {
         margin: 0 auto;
         max-width: 90rem;
