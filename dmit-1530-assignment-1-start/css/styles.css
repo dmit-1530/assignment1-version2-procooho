@@ -3,8 +3,8 @@
     --blue-grey-100: #CFD8DC;
     --blue-grey-200: #B0BEC5;
     --blue-grey-900: #263238;
-    --header-footer: #111111;
-    --white-font: #FFFFFF;
+    --black: #111111;
+    --white: #FFFFFF;
 }
 
 body {
@@ -23,7 +23,7 @@ footer {
 
 header,
 footer {
-    background-color: var(--header-footer)
+    background-color: var(--black)
 }
 
 header {
@@ -54,7 +54,7 @@ ul {
 }
 
 .header a{
-    color: var(--white-font);
+    color: var(--white);
 }
 
 .header li:nth-child(2) {
@@ -75,7 +75,7 @@ ul {
     font-size: 3.5rem;
     font-family: "Libre Baskerville", serif;
     font-weight: 700;
-    color: var(--white-font);
+    color: var(--white);
 }
 
 .logo a:nth-child(1) {
@@ -84,6 +84,49 @@ ul {
 
 .logo a:nth-child(2) {
     width: 5.75rem;
+}
+
+/* ============= Main ============= */
+
+/* Section 1 */
+section {    
+    padding: 4rem 2rem 0 2rem;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.25rem;
+    font-weight: normal;
+}
+
+section:nth-child(1) {
+    background-color: var(--blue-grey-50);
+}
+
+section:nth-child(1) p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem 0 2.25rem 0;
+}
+
+section:nth-child(1) a {
+    width: 6.43rem;
+    height: 3.5rem;
+    background-color: var(--black);
+    display: block;
+    color: #ECEFF1;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 0.37rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+section:nth-child(1) img {
+    border-radius: 0.5rem;
+    padding-bottom: 4rem;
 }
 
 /* ============= Footer ============= */
@@ -134,7 +177,7 @@ footer {
 }
 
 .footer-nav a {
-    color: var(--white-font);
+    color: var(--white);
     font-size: 0.75rem;    
 }
 
@@ -152,7 +195,7 @@ footer {
     font-size: 3.5rem;
     font-family: "Libre Baskerville", serif;
     font-weight: 700;
-    color: var(--white-font);
+    color: var(--white);
 }
 
 .logo-footer a:nth-child(1) {
