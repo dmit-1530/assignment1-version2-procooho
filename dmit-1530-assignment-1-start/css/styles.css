@@ -53,6 +53,17 @@ p {
     font-weight: 400;
 }
 
+.star,
+.star-left {
+    font-size: 2.5rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+.bold {
+    font-weight: 700;
+}
+
 /* ============= Header ============= */
 
 /* Nav*/
@@ -141,12 +152,6 @@ section:nth-child(1) img {
 }
 
 /* Section 2 */
-section:nth-child(2) span {
-    font-size: 2.5rem;
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-}
-
 section:nth-child(2) h2 {
     margin-bottom: 2rem;
 }
@@ -180,6 +185,56 @@ section:nth-child(3) p:nth-child(2) {
     color: var(--blue-grey-50);
     padding-bottom: 4rem;
 }
+
+/* Section 4 */
+section:nth-child(4) {
+    background-color: var(--blue-grey-100);
+    padding-bottom: 1rem;
+}
+
+section:nth-child(4) h2 {
+    margin-bottom: 1.5rem;
+}
+
+section:nth-child(4) p {
+    margin-bottom: 3rem;
+}
+
+section:nth-child(4) .star {
+    display: inline;
+    text-align: center;
+}
+
+section:nth-child(4) .star-left {
+    display: block;
+    text-align: left;
+}
+
+section:nth-child(4) h3:nth-child(2) {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+section:nth-child(4) li {
+    list-style: disc;
+    text-align: left;
+}
+
+section:nth-child(4) ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+}
+
+section:nth-child(4) p {
+   margin-bottom: 1rem;
+}
+
+section:nth-child(4) img {
+    padding: 3rem 0;
+}
+
+/* Section 5 */
 
 
 /* ============= Footer ============= */
