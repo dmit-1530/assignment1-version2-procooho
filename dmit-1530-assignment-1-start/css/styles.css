@@ -72,18 +72,26 @@ figcaption {
 /* ============= Header ============= */
 
 /* Nav */
-ul {
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul {
     list-style: none;
     display: flex;
     padding: 0;
     width: 20rem;
     justify-content: center;
     align-items: flex-end;
+    margin: 0;
 }
 
 .header {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
 }
 
 .header nav {
@@ -289,6 +297,7 @@ section:nth-child(5) a {
 .gallery-container section:nth-child(1) img {
     margin: 0;
     margin-top: 1rem;
+    width: 100%;
 }
 
 .gallery-container section:nth-child(1) p {
@@ -405,6 +414,7 @@ footer {
     flex-direction: column;
     text-align: left;
     padding: 0;
+    list-style: none;
 }
 
 .footer-nav nav ul li {
@@ -484,6 +494,11 @@ footer {
 
     .header nav ul {
         align-items: flex-end;
+    }
+
+    .header nav,
+    .logo {
+        margin: 0;
     }
 
     /* Home */
@@ -656,11 +671,35 @@ footer {
     }
 
     /* Gallery */
+
+    .gallery-container-inner .flex:first-of-type {
+        margin-bottom: 3rem;
+    }
+
+    .gallery-container-inner .flex p {
+        margin: 0;
+    }
+
+    .gallery-container-inner .flex figure figcaption {
+        margin-bottom: 0;
+    }
+
     .gallery-container-inner:nth-child(1) .flex>div {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+    }
+
+    .gallery-container-inner:nth-child(1) .flex>img {
+        padding: 0;
+    }
+
+    .gallery-container-inner .flex:nth-of-type(2) {
+        padding-bottom: 8rem;
+    }
+
+    .gallery-container-inner h3 {
+        text-align: left;
     }
 
 }
