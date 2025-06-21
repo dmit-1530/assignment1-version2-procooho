@@ -461,7 +461,6 @@ footer {
 }
 
 .logo-footer p {
-    font-family: "Inter", sans-serif;
     font-size: 0.75rem;
     width: 17rem;
     color: var(--blue-grey-200);
@@ -474,6 +473,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /* First Layout change */
@@ -701,7 +701,6 @@ footer {
     .gallery-container-inner h3 {
         text-align: left;
     }
-
 }
 
 /* MAX width Layout */
@@ -716,5 +715,4 @@ footer {
     .section {
         width: 100%;
     }
-
 }
