@@ -69,6 +69,10 @@ figcaption {
     font-weight: 700;
 }
 
+.section-container img {
+    margin: 0 auto;
+}
+
 /* ============= Header ============= */
 
 /* Nav */
@@ -706,10 +710,14 @@ footer {
 /* MAX width Layout */
 @media screen and (min-width: 1440px) {
     .section-container,
-    .gallery-container-inner,
-    .header {
+    .gallery-container-inner {
         margin: 0 auto;
         max-width: 90rem;
+    }
+
+    header .header {
+        margin: 0 auto;
+        max-width: 80rem;
     }
 
     .section {
